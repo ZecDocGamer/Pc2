@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("/img/fondo.png"); /* Aquí se añade la imagen de fondo */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .header {
+        background-color: #880abb; /* Color celeste */
+        padding: 20px;
+        text-align: center;
+      }
+      .header a {
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+      }
+      .description {
+        padding: 40px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+        margin: 20px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+      }
+      .gallery .item {
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .gallery img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .footer {
+        background-color: #880abb; /* Color celeste */
+        padding: 10px;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/html/index.html">Home</a>
+      <a href="/html/galeria.html">Movie Gallery</a>
+    </div>
+
+    <div class="description">
+      <h2>
+        Welcome a
+        <h2>"N"</h2>
+      </h2>
+      <p>
+        Explore our collection of movies. Browse through various genres and
+        discover your next favorite movie!
+      </p>
+    </div>
+
+    <div class="gallery">
+      <div class="item">
+        <img src="/img/El Cuervo.png" alt="Movie 1" />
+        <h3>El Cuervo</h3>
+      </div>
+      <div class="item">
+        <img src="/img/Garfield.png" alt="Movie 2" />
+        <h3>Garfield</h3>
+      </div>
+      <div class="item">
+        <img src="/img/Joker Folie à Deux.png" alt="Movie 3" />
+        <h3>Joker Folie à Deux</h3>
+      </div>
+      <div class="item">
+        <img src="/img/Deadpool & Wolverine.png" alt="Movie 4" />
+        <h3>Deadpool & Wolverine</h3>
+      </div>
+    </div>
+
+    <div class="footer">BlockBoss © 2024</div>
+  </body>
+</html>

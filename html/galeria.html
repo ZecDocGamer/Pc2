@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Gallery</title>
+    <link rel="stylesheet" href="/css/stile2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="/html/index.html">Home</a>
+        <a href="/html/galeria.html">Movie Gallery</a>
+      </div>
+    </header>
+
+    <!-- Botón de categorías centrado -->
+    <div class="filter-container">
+      <select id="categoryFilter">
+        <option value="all">All Generes</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+      </select>
+    </div>
+
+    <div class="grid-container" id="movieGrid">
+      <!-- Action Movies -->
+      <div class="movie-card" data-genre="action">
+        <img class="movie-img" src="/img/xXx.png" alt="Action Movie 1" />
+        <h3>xXx</h3>
+        <p>Exciting xXx with lots of explosions!</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="action">
+        <img
+          class="movie-img"
+          src="/img/Deadpool & Wolverine.png"
+          alt="Action Movie 2"
+        />
+        <h3>Deadpool & Wolverine</h3>
+        <p>Another thrilling action Deadpool & Wolverine full of stunts!</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <!-- Comedy Movies -->
+      <div class="movie-card" data-genre="comedy">
+        <img
+          class="movie-img"
+          src="/img/Mi Villano Favprito 4.png"
+          alt="Comedy Movie 1"
+        />
+        <h3>Despicable Me 4</h3>
+        <p>A hilarious comedy that will make you laugh out loud!</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="comedy">
+        <img class="movie-img" src="/img/Garfield.png" alt="Comedy Movie 2" />
+        <h3>Garfield</h3>
+        <p>A comedy movie that will keep you entertained.</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <!-- Drama Movies -->
+      <div class="movie-card" data-genre="drama">
+        <img
+          class="movie-img"
+          src="/img/Joker Folie à Deux.png"
+          alt="Drama Movie 1"
+        />
+        <h3>Joker Folie à Deux</h3>
+        <p>A deep and moving drama about life and relationships.</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="drama">
+        <img
+          class="movie-img"
+          src="/img/Intensamente.png"
+          alt="Drama Movie 2"
+        />
+        <h3>Intensamente</h3>
+        <p>A thought-provoking drama that tugs at your heartstrings.</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+
+      <!-- Horror Movies -->
+      <div class="movie-card" data-genre="horror">
+        <img
+          class="movie-img"
+          src="/img/La Sustancia.png"
+          alt="Horror Movie 1"
+        />
+        <h3>La Sustancia</h3>
+        <p>A terrifying horror film to keep you on the edge of your seat.</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+      <div class="movie-card" data-genre="horror">
+        <img class="movie-img" src="/img/El Cuervo.png" alt="Horror Movie 2" />
+        <h3>El Cuervo</h3>
+        <p>A chilling horror movie that will haunt your dreams.</p>
+        <button class="favorite-btn">Favorite</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img
+          id="modalMovieImage"
+          class="modal-movie-img"
+          src=""
+          alt="Movie Image"
+        />
+        <h2 id="movieTitle"></h2>
+        <p id="movieDescription"></p>
+      </div>
+    </div>
+
+    <footer>2024 Movie Gallery</footer>
+
+    <script src="/scrip/categoryFilter.js"></script>
+    <script src="/scrip/favorito.js"></script>
+    <script src="/scrip/modal.js"></script>
+  </body>
+</html>
